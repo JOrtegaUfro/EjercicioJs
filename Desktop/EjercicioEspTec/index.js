@@ -33,25 +33,33 @@ function Combate(iniciante){
     do{
         fighterDos.health=fighterDos.health-fighterUno.damage;
         console.log('el luchador numero dos inflinge '+fighterDos.damage+' de daño al luchador uno')
+        console.log('luchador uno tiene '+fighterUno.health+' de vida actualmente');
         console.log('ˁ•ܫ•ˀつ');
         fighterDos.health=fighterDos.health-fighterUno.damage;
         console.log('el luchador numero uno inflinge '+fighterUno.damage+' de daño al luchador dos')
+        console.log('luchador uno tiene '+fighterDos.health+' de vida actualmente');
         console.log('〈◽ಎ◽〉');
     }while((fighterUno.health>0) && (fighterDos.health>0))
 }else{
     do{
         fighterDos.health=fighterDos.health-fighterUno.damage;
-        console.log('el luchador numero uno inflinge '+fighterUno.damage+' de daño al luchador dos')
+        console.log('el luchador numero uno inflinge '+fighterUno.damage+' de daño al luchador dos');
+        console.log('luchador uno tiene '+fighterDos.health+' de vida actualmente');
         console.log('〈◽ಎ◽〉');
         fighterDos.health=fighterDos.health-fighterUno.damage;
-        console.log('el luchador numero dos inflinge '+fighterDos.damage+' de daño al luchador uno')
+        console.log('el luchador numero dos inflinge '+fighterDos.damage+' de daño al luchador uno');
+        console.log('luchador uno tiene '+fighterUno.health+' de vida actualmente');
         console.log('ˁ•ܫ•ˀつ');
     }while((fighterUno.health>0) && (fighterDos.health>0))
 }
     
     if(fighterUno.health<0){
+        console.log('el luchador numero dos inflinge '+fighterDos.damage+' de daño al luchador uno');
+        console.log('luchador uno tiene '+fighterUno.health+' de vida actualmente');
         console.log('murio el peleador uno');
     }else{
+        console.log('el luchador numero uno inflinge '+fighterUno.damage+' de daño al luchador dos');
+        console.log('luchador uno tiene '+fighterDos.health+' de vida actualmente');
         console.log('murio el peleador dos');
     }
 
